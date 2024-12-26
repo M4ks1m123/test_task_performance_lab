@@ -39,9 +39,15 @@ public class task2 {
         double radius = scanner.nextInt();
 
         scanner = new Scanner(dot);
-        while (scanner.hasNext()){
-            dots.add(new dot(scanner.nextInt(), scanner.nextInt()));
 
+        while (scanner.hasNext()){
+
+            if (dots.size()==99){
+                System.out.println("Dot limit achieved("+dots.size()+")");
+                break;
+            }
+
+            dots.add(new dot(scanner.nextInt(), scanner.nextInt()));
             if (scanner.hasNext())
                 scanner.nextLine();
 
