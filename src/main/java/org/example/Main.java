@@ -1,8 +1,12 @@
 package org.example;
 
-public class Main {
-    public static void main(String[] args) {
+import org.example.task1.task1;
 
-        System.out.println("Hello world!");
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        task1 task1 = new task1();
+        task1.run();
     }
 }
