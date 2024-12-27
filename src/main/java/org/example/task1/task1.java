@@ -4,21 +4,13 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class task1 {
-    private int m;
-    private int n;
 
     private int[] roundArray;
-    BufferedReader reader = new BufferedReader(
-            new InputStreamReader(System.in));
 
-
-    public void run() throws IOException {
-        System.out.println("Enter n:");
-        n = Integer.parseInt(reader.readLine());
-        System.out.println("Enter m:");
-        m = Integer.parseInt(reader.readLine());
+    public void run(int n, int m) {
 
         roundArray = new int[n];
 
@@ -41,9 +33,8 @@ public class task1 {
             System.out.print(res.get(i));
     }
 
-    public static void main(String[] artgs) throws IOException {
-
+    public static void main(String[] args) {
         task1 task1 = new task1();
-        task1.run();
+        task1.run(Integer.parseInt(args[0]), Integer.parseInt(args[1]));
     }
 }

@@ -1,7 +1,5 @@
 package org.example.task4;
 
-import org.example.task1.task1;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -9,11 +7,7 @@ import java.util.Scanner;
 import static java.lang.Math.abs;
 
 public class task4 {
-    public void run() throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        System.out.println("Enter file path");
-        String filePath = reader.readLine();
+    public void run(String filePath) throws IOException {
         Scanner scanner = new Scanner(new File(filePath));
 
         ArrayList<Integer> numbers = new ArrayList<>();
@@ -27,27 +21,27 @@ public class task4 {
         }
         int mean = sum / numbers.size();
 
-        int lowestDiff = abs(abs(mean) - abs(numbers.getFirst()));
+        int lowestDiff = abs(mean - numbers.getFirst());
         int pivot = numbers.getFirst();
 
         for(int i=0; i<numbers.size();i++){
-            if (lowestDiff>abs(abs(mean) - abs(numbers.get(i)))){
-                lowestDiff=abs(abs(mean) - abs(numbers.get(i)));
+            if (lowestDiff>abs(mean - numbers.get(i))){
+                lowestDiff=abs(mean - numbers.get(i));
                 pivot=numbers.get(i);
             }
         }
 
         int sumSteps = 0;
         for (int i=0; i<numbers.size(); i++){
-            int diffWithMean = abs(abs(numbers.get(i))-abs(pivot));
-            sumSteps+=abs(diffWithMean);
+            int diffWithMean = abs(numbers.get(i)-pivot);
+            sumSteps+=diffWithMean;
         }
         System.out.println(sumSteps);
     }
 
-    public static void main(String[] artgs) throws IOException {
+    public static void main(String[] args) throws IOException {
 
         task4 task4 = new task4();
-        task4.run();
+        task4.run(args[0]);
     }
 }

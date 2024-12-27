@@ -2,12 +2,12 @@ package org.example.task3;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.example.task1.task1;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class task3 {
@@ -136,18 +136,9 @@ public class task3 {
         }
     }
 
-    public void run() throws IOException{
+    public void run(String testsFilePath, String valuesFilePath, String reportDirectoryPath) throws IOException{
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));
-
-        System.out.println("Enter tests.json file path");
-        String testsFilePath = reader.readLine();
-
-        System.out.println("Enter values.json file path");
-        String valuesFilePath = reader.readLine();
-
-        System.out.println("Enter directory path where report.json will be saved");
-        String reportDirectoryPath = reader.readLine();
 
         ObjectMapper objectMapper = new ObjectMapper();
 
@@ -169,10 +160,14 @@ public class task3 {
         objectMapper.writeValue(new File(reportDirectoryPath + "/report.json"), tests);
     }
 
-    public static void main(String[] artgs) throws IOException {
+    public static void main(String[] args) throws IOException {
+        //Так как для запуска данного класса требуются внешние зависимости, то при запуске через командную
+        // строку с помощью команды "java <javaclassname>.java <args>" программа не видит зависимости. Данная
+        // проблема решается по средству сборки проекта в jar файл и использования команды
+        // "java -jar <jarfilename>.jar <args>. Jar файл находится в папке task3 под названием task3.jar
 
         task3 task3 = new task3();
-        task3.run();
+        task3.run(args[0], args[1], args[2]);
     }
 
 }

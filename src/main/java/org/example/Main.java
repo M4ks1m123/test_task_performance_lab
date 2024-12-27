@@ -18,7 +18,7 @@ public class Main {
 //      task3 task3 = new task3();
 //      task3.run();
 
-        task4 task4 = new task4();
-        task4.run();
+//        task4 task4 = new task4();
+//        task4.run();
     }
 }

@@ -1,8 +1,6 @@
 package org.example.task2;
 
 
-import org.example.task1.task1;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -28,15 +26,7 @@ public class task2 {
         }
     }
 
-    public void run() throws IOException {
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(System.in));
-
-        System.out.println("Enter path to circle configuration");
-        String circleFilePath = reader.readLine();
-
-        System.out.println("Enter path to dots configuration");
-        String dotsFilePath = reader.readLine();
+    public void run(String circleFilePath, String dotsFilePath) throws IOException {
 
         ArrayList<dot> dots = new ArrayList<>();
         File circle = new File(circleFilePath);
@@ -80,9 +70,9 @@ public class task2 {
         }
     }
 
-    public static void main(String[] artgs) throws IOException {
+    public static void main(String[] args) throws IOException {
 
         task2 task2 = new task2();
-        task2.run();
+        task2.run(args[0], args[1]);
     }
 }
