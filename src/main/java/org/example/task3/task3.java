@@ -2,6 +2,7 @@ package org.example.task3;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.example.task1.task1;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -168,5 +169,10 @@ public class task3 {
         objectMapper.writeValue(new File(reportDirectoryPath + "/report.json"), tests);
     }
 
+    public static void main(String[] artgs) throws IOException {
+
+        task3 task3 = new task3();
+        task3.run();
+    }
 
 }

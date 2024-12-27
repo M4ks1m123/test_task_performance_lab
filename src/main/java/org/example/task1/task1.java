@@ -40,4 +40,10 @@ public class task1 {
         for(int i=0; i<res.size(); i++)
             System.out.print(res.get(i));
     }
+
+    public static void main(String[] artgs) throws IOException {
+
+        task1 task1 = new task1();
+        task1.run();
+    }
 }

@@ -1,5 +1,7 @@
 package org.example.task4;
 
+import org.example.task1.task1;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -41,5 +43,11 @@ public class task4 {
             sumSteps+=abs(diffWithMean);
         }
         System.out.println(sumSteps);
+    }
+
+    public static void main(String[] artgs) throws IOException {
+
+        task4 task4 = new task4();
+        task4.run();
     }
 }

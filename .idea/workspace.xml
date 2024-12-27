@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f1c1cd-80be-4dbe-91d4-420f9aec9618" name="Changes" comment="added task4">
+    <list default="true" id="46f1c1cd-80be-4dbe-91d4-420f9aec9618" name="Changes" comment="fixed task4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task4/numbers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/task4/numbers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task1/task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/task1/task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task2/task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/task2/task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task3/task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/task3/task3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/task4/task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/task4/task4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,24 +49,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Caster/IdeaProjects/testtaskperformancelab&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.task1.executor": "Run",
+    "Application.task2.executor": "Run",
+    "Application.task3.executor": "Run",
+    "Application.task4.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Caster/IdeaProjects/testtaskperformancelab",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.task3" />
@@ -88,7 +94,8 @@
       <updated>1735228451814</updated>
       <workItem from="1735228452942" duration="1284000" />
       <workItem from="1735229975974" duration="47764000" />
-      <workItem from="1735279260728" duration="295000" />
+      <workItem from="1735279260728" duration="1007000" />
+      <workItem from="1735308858620" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -146,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735277437362</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed task4">
+      <option name="closed" value="true" />
+      <created>1735279622495</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735279622495</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +174,8 @@
     <MESSAGE value="added dot limit to task2" />
     <MESSAGE value="added task3, fixed input in task2, renamed variables in task1" />
     <MESSAGE value="added task4" />
-    <option name="LAST_COMMIT_MESSAGE" value="added task4" />
+    <MESSAGE value="fixed task4" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed task4" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/testtaskperformancelab$Main.ic" NAME="Main Coverage Results" MODIFIED="1735240793500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

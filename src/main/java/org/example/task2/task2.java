@@ -1,6 +1,8 @@
 package org.example.task2;
 
 
+import org.example.task1.task1;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -76,5 +78,11 @@ public class task2 {
             }
 
         }
+    }
+
+    public static void main(String[] artgs) throws IOException {
+
+        task2 task2 = new task2();
+        task2.run();
     }
 }
