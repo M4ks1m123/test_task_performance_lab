@@ -25,19 +25,19 @@ public class task4 {
         }
         int mean = sum / numbers.size();
 
-        int lowestDiff = abs(mean - numbers.getFirst());
+        int lowestDiff = abs(abs(mean) - abs(numbers.getFirst()));
         int pivot = numbers.getFirst();
 
         for(int i=0; i<numbers.size();i++){
-            if (lowestDiff>abs(mean - numbers.get(i))){
-                lowestDiff=abs(mean - numbers.get(i));
+            if (lowestDiff>abs(abs(mean) - abs(numbers.get(i)))){
+                lowestDiff=abs(abs(mean) - abs(numbers.get(i)));
                 pivot=numbers.get(i);
             }
         }
 
         int sumSteps = 0;
         for (int i=0; i<numbers.size(); i++){
-            int diffWithMean = abs(numbers.get(i)-pivot);
+            int diffWithMean = abs(abs(numbers.get(i))-abs(pivot));
             sumSteps+=abs(diffWithMean);
         }
         System.out.println(sumSteps);
