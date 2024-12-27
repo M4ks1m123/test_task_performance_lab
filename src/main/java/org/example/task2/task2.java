@@ -1,8 +1,7 @@
 package org.example.task2;
 
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -27,11 +26,19 @@ public class task2 {
         }
     }
 
-    public void run() throws FileNotFoundException {
+    public void run() throws IOException {
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(System.in));
+
+        System.out.println("Enter path to circle configuration");
+        String circleFilePath = reader.readLine();
+
+        System.out.println("Enter path to dots configuration");
+        String dotsFilePath = reader.readLine();
 
         ArrayList<dot> dots = new ArrayList<>();
-        File circle = new File("src/main/java/org/example/task2/circle.txt");
-        File dot = new File("src/main/java/org/example/task2/dot.txt");
+        File circle = new File(circleFilePath);
+        File dot = new File(dotsFilePath);
 
         Scanner scanner = new Scanner(circle);
         dot circleCenterDot = new dot(scanner.nextInt(), scanner.nextInt());

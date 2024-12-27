@@ -9,7 +9,7 @@ public class task1 {
     private int m;
     private int n;
 
-    private int[] circle;
+    private int[] roundArray;
     BufferedReader reader = new BufferedReader(
             new InputStreamReader(System.in));
 
@@ -20,20 +20,20 @@ public class task1 {
         System.out.println("Enter m:");
         m = Integer.parseInt(reader.readLine());
 
-        circle = new int[n];
+        roundArray = new int[n];
 
         for (int i=1; i<=n; i++) {
-            circle[i-1] = i;
+            roundArray[i-1] = i;
         }
         ArrayList<Integer> res = new ArrayList<Integer>();
 
         for(int i=0; i<=100; i++){
 
             if (i % (m-1) == 0){
-                if (!res.isEmpty() && circle[i%n] == res.get(0)){
+                if (!res.isEmpty() && roundArray[i%n] == res.get(0)){
                     break;
                 }
-                res.add(circle[i%n]);
+                res.add(roundArray[i%n]);
             }
 
         }
